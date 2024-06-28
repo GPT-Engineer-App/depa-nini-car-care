@@ -7,9 +7,10 @@ import Login from "./pages/Login.jsx";
 import Profile from "./pages/Profile.jsx";
 import Navbar from "./components/Navbar.jsx";
 import ServiceReservation from "./pages/ServiceReservation.jsx";
-import OrderTracking from "./pages/OrderTracking.jsx"; // Import OrderTracking
-import Payment from "./pages/Payment.jsx"; // Import Payment
+import OrderTracking from "./pages/OrderTracking.jsx";
+import Payment from "./pages/Payment.jsx";
 import Invoice from "./pages/Invoice.jsx";
+import Reviews from "./pages/Reviews.jsx"; // Import Reviews
 
 function App() {
   return (
@@ -23,9 +24,10 @@ function App() {
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/profile" element={<Profile />} />
         <Route exact path="/service-reservation" element={<ServiceReservation />} />
-        <Route exact path="/order-tracking/:orderId" element={<OrderTracking />} /> {/* Add route for OrderTracking */}
-        <Route exact path="/payment" element={<Payment />} /> {/* Add route for Payment */}
+        <Route exact path="/order-tracking/:orderId" element={<OrderTracking />} />
+        <Route exact path="/payment" element={<Payment />} />
         <Route exact path="/invoice/:invoiceId" element={<Invoice />} />
+        <Route exact path="/reviews" element={<Reviews />} /> {/* Add route for Reviews */}
       </Routes>
     </Router>
   );
