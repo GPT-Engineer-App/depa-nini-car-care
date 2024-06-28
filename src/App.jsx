@@ -10,7 +10,10 @@ import ServiceReservation from "./pages/ServiceReservation.jsx";
 import OrderTracking from "./pages/OrderTracking.jsx";
 import Payment from "./pages/Payment.jsx";
 import Invoice from "./pages/Invoice.jsx";
-import Reviews from "./pages/Reviews.jsx"; // Import Reviews
+import Reviews from "./pages/Reviews.jsx";
+import Chat from "./pages/Chat.jsx"; // Import Chat
+import FAQ from "./pages/FAQ.jsx"; // Import FAQ
+import SupportTickets from "./pages/SupportTickets.jsx"; // Import SupportTickets
 
 function App() {
   return (
@@ -27,7 +30,10 @@ function App() {
         <Route exact path="/order-tracking/:orderId" element={<OrderTracking />} />
         <Route exact path="/payment" element={<Payment />} />
         <Route exact path="/invoice/:invoiceId" element={<Invoice />} />
-        <Route exact path="/reviews" element={<Reviews />} /> {/* Add route for Reviews */}
+        <Route exact path="/reviews" element={<Reviews />} />
+        <Route exact path="/chat" element={<Chat />} /> {/* Add route for Chat */}
+        <Route exact path="/faq" element={<FAQ />} /> {/* Add route for FAQ */}
+        <Route exact path="/support-tickets" element={<SupportTickets />} /> {/* Add route for SupportTickets */}
       </Routes>
     </Router>
   );

@@ -12,7 +12,10 @@ const Navbar = () => {
           <Link to="/about" className="text-gray-300 hover:text-white">About</Link>
           <Link to="/service-reservation" className="text-gray-300 hover:text-white">Service Reservation</Link>
           <Link to="/contact" className="text-gray-300 hover:text-white">Contact</Link>
-          <Link to="/reviews" className="text-gray-300 hover:text-white">Reviews</Link> {/* Add link to Reviews */}
+          <Link to="/reviews" className="text-gray-300 hover:text-white">Reviews</Link>
+          <Link to="/chat" className="text-gray-300 hover:text-white">Chat</Link>
+          <Link to="/faq" className="text-gray-300 hover:text-white">FAQ</Link>
+          <Link to="/support-tickets" className="text-gray-300 hover:text-white">Support Tickets</Link>
         </div>
       </div>
     </nav>
