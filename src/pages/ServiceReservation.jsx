@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { format } from "date-fns";
+import { toast } from "sonner";
 
 const ServiceReservation = () => {
   const [formData, setFormData] = useState({
@@ -37,6 +38,7 @@ const ServiceReservation = () => {
     e.preventDefault();
     // Add reservation logic here
     console.log("Service reserved:", formData);
+    toast.success("Order confirmed!");
     navigate("/profile");
   };
 
