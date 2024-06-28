@@ -6,6 +6,7 @@ import Register from "./pages/Register.jsx";
 import Login from "./pages/Login.jsx";
 import Profile from "./pages/Profile.jsx";
 import Navbar from "./components/Navbar.jsx";
+import ServiceReservation from "./pages/ServiceReservation.jsx";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/register" element={<Register />} />
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/profile" element={<Profile />} />
+        <Route exact path="/service-reservation" element={<ServiceReservation />} />
       </Routes>
     </Router>
   );
